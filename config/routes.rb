@@ -3,10 +3,10 @@ NonScaffoldedExample::Application.routes.draw do
   root :to => 'info#index'
   # The URL / loads the index action of the info controller.
   
-  match 'about' => 'info#about', :as => 'about'
+  match 'about_company_name' => 'info#about', :as => 'about'
   # The URL /about maps to the about action of the info controller.
   
-  match 'contact' => 'info#contact', :as => 'contact'
+  match 'contact_us' => 'info#contact', :as => 'contact'
   # The URL /contact mpas to the contact action of the info controller.
   
   
