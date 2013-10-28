@@ -1,4 +1,15 @@
 NonScaffoldedExample::Application.routes.draw do
+  
+  root :to => 'info#index'
+  # The URL / loads the index action of the info controller.
+  
+  match 'about' => 'info#about', :as => 'about'
+  # The URL /about maps to the about action of the info controller.
+  
+  match 'contact' => 'info#contact', :as => 'contact'
+  # The URL /contact mpas to the contact action of the info controller.
+  
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
